@@ -11,6 +11,7 @@
 @interface EditImageViewController : UIViewController
 
 @property (nonatomic, retain) UIImage*image;
+@property (nonatomic, retain) UIImageView*imageView;
 
 -(id)initWithImage:(UIImage*)image;
 -(void)setImageForEditing:(UIImage*)image;

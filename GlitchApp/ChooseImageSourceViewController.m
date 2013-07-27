@@ -63,7 +63,6 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
     NSURL *imagePath = [info objectForKey:@"UIImagePickerControllerReferenceURL"];
     NSString *imageName = @"image.png";
     if(imagePath){
