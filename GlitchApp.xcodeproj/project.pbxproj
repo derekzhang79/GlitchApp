@@ -21,6 +21,9 @@
 		DDEA67BC17A410C2009E00DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEA679D17A410C2009E00DD /* Foundation.framework */; };
 		DDEA67C417A410C2009E00DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDEA67C217A410C2009E00DD /* InfoPlist.strings */; };
 		DDEA67C717A410C2009E00DD /* GlitchAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67C617A410C2009E00DD /* GlitchAppTests.m */; };
+		DDEA67D317A41329009E00DD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67D217A41329009E00DD /* RootViewController.m */; };
+		DDEA67D617A4220B009E00DD /* EditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67D517A4220B009E00DD /* EditImageViewController.m */; };
+		DDEA67D917A42BE2009E00DD /* ChooseImageSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67D817A42BE2009E00DD /* ChooseImageSourceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		DDEA67C317A410C2009E00DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDEA67C517A410C2009E00DD /* GlitchAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlitchAppTests.h; sourceTree = "<group>"; };
 		DDEA67C617A410C2009E00DD /* GlitchAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlitchAppTests.m; sourceTree = "<group>"; };
+		DDEA67D117A41329009E00DD /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DDEA67D217A41329009E00DD /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DDEA67D417A4220B009E00DD /* EditImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditImageViewController.h; sourceTree = "<group>"; };
+		DDEA67D517A4220B009E00DD /* EditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageViewController.m; sourceTree = "<group>"; };
+		DDEA67D717A42BE2009E00DD /* ChooseImageSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseImageSourceViewController.h; sourceTree = "<group>"; };
+		DDEA67D817A42BE2009E00DD /* ChooseImageSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseImageSourceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +121,12 @@
 		DDEA67A117A410C2009E00DD /* GlitchApp */ = {
 			isa = PBXGroup;
 			children = (
+				DDEA67D017A412D0009E00DD /* Screens */,
 				DDEA67AA17A410C2009E00DD /* AppDelegate.h */,
 				DDEA67AB17A410C2009E00DD /* AppDelegate.m */,
 				DDEA67A217A410C2009E00DD /* Supporting Files */,
+				DDEA67D117A41329009E00DD /* RootViewController.h */,
+				DDEA67D217A41329009E00DD /* RootViewController.m */,
 			);
 			path = GlitchApp;
 			sourceTree = "<group>";
@@ -150,6 +162,17 @@
 				DDEA67C217A410C2009E00DD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDEA67D017A412D0009E00DD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA67D417A4220B009E00DD /* EditImageViewController.h */,
+				DDEA67D517A4220B009E00DD /* EditImageViewController.m */,
+				DDEA67D717A42BE2009E00DD /* ChooseImageSourceViewController.h */,
+				DDEA67D817A42BE2009E00DD /* ChooseImageSourceViewController.m */,
+			);
+			name = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +286,9 @@
 			files = (
 				DDEA67A817A410C2009E00DD /* main.m in Sources */,
 				DDEA67AC17A410C2009E00DD /* AppDelegate.m in Sources */,
+				DDEA67D317A41329009E00DD /* RootViewController.m in Sources */,
+				DDEA67D617A4220B009E00DD /* EditImageViewController.m in Sources */,
+				DDEA67D917A42BE2009E00DD /* ChooseImageSourceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import "ChooseImageSourceViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +17,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    ChooseImageSourceViewController*chooseImagreSourceViewController = [[ChooseImageSourceViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:chooseImagreSourceViewController];
+    [self.window addSubview:navController.view];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
