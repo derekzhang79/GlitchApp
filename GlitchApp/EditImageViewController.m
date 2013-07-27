@@ -26,7 +26,16 @@
 -(void)setImageForEditing:(UIImage*)image{
     self.image = image;
     if(self.image){
-        [self.view addSubview:[[UIImageView alloc] initWithImage:image]];
+        CGRect screenRect = [[UIScreen mainScreen] bounds];
+        CGFloat screenWidth = screenRect.size.width;
+        CGFloat screenHeight = screenRect.size.height;
+        UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
+        CGRect currentRect = imageView.frame;
+        currentRect.size.height = currentRect.size.height* (screenWidth/currentRect.size.width);
+        currentRect.size.width = screenWidth;
+        currentRect.origin = CGPointMake(0, self.view.frame.size.height/2 - imageView.frame.size.height/2);
+        imageView.frame = currentRect;
+        [self.view addSubview:imageView];
     }
 }
 
@@ -36,7 +45,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 	// Do any additional setup after loading the view.
 }
 
