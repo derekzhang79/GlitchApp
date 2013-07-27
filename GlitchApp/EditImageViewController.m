@@ -29,7 +29,6 @@
     if(self.imageView){
         [self.imageView removeFromSuperview];
     }
-    self.image = image;
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
@@ -91,7 +90,10 @@
     UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:frame];
     [toolbar setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin];
     NSMutableArray *items = [[NSMutableArray alloc] init];
-    [items addObject:[[UIBarButtonItem alloc] initWithTitle:@"Glitch!" style:UIBarButtonItemStylePlain target:self action:@selector(glitch)]];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    [items addObject:flexibleSpace];
+    [items addObject:[[UIBarButtonItem alloc] initWithTitle:@"Glitch!" style:UIBarButtonItemStyleBordered target:self action:@selector(glitch)]];
+    [items addObject:flexibleSpace];
     [toolbar setItems:items animated:NO];
     [self.view addSubview:toolbar];
 	// Do any additional setup after loading the view.

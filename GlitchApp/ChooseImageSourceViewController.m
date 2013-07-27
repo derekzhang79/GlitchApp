@@ -69,6 +69,7 @@
         imageName = [imagePath lastPathComponent];
     }
     UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    self.editImageController.image = image;
     [self.editImageController setImageForEditing:image];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
