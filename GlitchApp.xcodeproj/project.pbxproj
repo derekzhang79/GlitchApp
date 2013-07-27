@@ -24,6 +24,7 @@
 		DDEA67D317A41329009E00DD /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67D217A41329009E00DD /* RootViewController.m */; };
 		DDEA67D617A4220B009E00DD /* EditImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67D517A4220B009E00DD /* EditImageViewController.m */; };
 		DDEA67D917A42BE2009E00DD /* ChooseImageSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67D817A42BE2009E00DD /* ChooseImageSourceViewController.m */; };
+		DDEA67DC17A47326009E00DD /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA67DB17A47326009E00DD /* UIImage+Tint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		DDEA67D517A4220B009E00DD /* EditImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditImageViewController.m; sourceTree = "<group>"; };
 		DDEA67D717A42BE2009E00DD /* ChooseImageSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseImageSourceViewController.h; sourceTree = "<group>"; };
 		DDEA67D817A42BE2009E00DD /* ChooseImageSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseImageSourceViewController.m; sourceTree = "<group>"; };
+		DDEA67DA17A47326009E00DD /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		DDEA67DB17A47326009E00DD /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				DDEA67A217A410C2009E00DD /* Supporting Files */,
 				DDEA67D117A41329009E00DD /* RootViewController.h */,
 				DDEA67D217A41329009E00DD /* RootViewController.m */,
+				DDEA67DA17A47326009E00DD /* UIImage+Tint.h */,
+				DDEA67DB17A47326009E00DD /* UIImage+Tint.m */,
 			);
 			path = GlitchApp;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 				DDEA67D317A41329009E00DD /* RootViewController.m in Sources */,
 				DDEA67D617A4220B009E00DD /* EditImageViewController.m in Sources */,
 				DDEA67D917A42BE2009E00DD /* ChooseImageSourceViewController.m in Sources */,
+				DDEA67DC17A47326009E00DD /* UIImage+Tint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
